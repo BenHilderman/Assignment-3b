@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created on: sept 20
+// Created by: Ben H.
+// Created for: ICS3U
+// pizza cost
+
+// properties
+let size: Float
+let toppings: Float
+let cost: Float = 0.00 
+let hst: Float = 0.13
+
+show("This shows the total cost of your pizza order")
+
+show("What size?")
+
+size = Float(askForNumber("Large = 6  Extra Large = 10"))
+    
+show("How Many Toppings?")
+
+toppings = Float(askForNumber("One = 1, Two = 1.75, Three = 2.50, Four = 3.25"))
+
+// process
+let subTotal = size + toppings
+let hstTotal = subTotal * hst
+let totalCost = subTotal + hstTotal
+
+show("The Total Cost is: \(totalCost)$")
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 580}</string>
+			<key>OriginalContent</key>
+			<string>// 1. Ask for a date
+show("What is your birthdate?")
+let birthdate = askForDate("Birthdate")
+
+// 2. Ask for a number
+show("What is your favorite number?")
+let number = askForNumber("Number")
+
+// 3. Ask for a choice from a set of options
+show("What is your favorite color?")
+let color = askForChoice("Color", options: ["Blue", "Green", "Orange", "Purple", "Red", "Yellow"])
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 373}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Types.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
